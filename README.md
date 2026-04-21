@@ -76,6 +76,7 @@ text
 
 ---
 ## How to Show this Project
+```bash
 Streamlit Deploy link:https://student-score-predictor-hrykgxexqb5k96txlzmrwb.streamlit.app/
 
 ---
