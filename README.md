@@ -1,189 +1,235 @@
 # 🎓 Student Performance Prediction using Machine Learning
 
-![Python](https://img.shields.io/badge/Python-3.10-blue)
-![ML](https://img.shields.io/badge/Machine-Learning-orange)
-![Status](https://img.shields.io/badge/Project-Completed-green)
-![Framework](https://img.shields.io/badge/Streamlit-WebApp-red)
-![GitHub](https://img.shields.io/badge/GitHub-maahfuzdev-blueviolet)
+<p align="center">
+
+![Python](https://img.shields.io/badge/Python-3.10-blue?style=for-the-badge\&logo=python)
+![Machine Learning](https://img.shields.io/badge/Machine-Learning-orange?style=for-the-badge)
+![Streamlit](https://img.shields.io/badge/Streamlit-WebApp-red?style=for-the-badge\&logo=streamlit)
+![Status](https://img.shields.io/badge/Status-Completed-success?style=for-the-badge)
+![GitHub](https://img.shields.io/badge/GitHub-maahfuzdev-blueviolet?style=for-the-badge\&logo=github)
+
+</p>
 
 ---
 
-## 🚀 Project Overview
+## 🚀 Live Demo
 
-This project is a **Machine Learning-based Student Performance Prediction System** that predicts a student's exam score based on:
+👉 **Click to Open Web App**
 
-- 📚 **Study Hours** (per day)  
-- 🏫 **Attendance Percentage** (%)  
+🌐 **Live App:**
+https://student-score-predictor-hrykgxexqb5k96txlzmrwb.streamlit.app/
 
-It also classifies students into performance categories such as:
+---
 
-- 🔴 **Weak** (0-40)  
-- 🟠 **Average** (41-60)  
-- 🔵 **Good** (61-75)  
-- 🟢 **Excellent** (76-100)  
+## 📌 Project Overview
 
-A modern **Streamlit Web App** is included for interactive predictions and visualization.
+**Student Performance Prediction System** is a Machine Learning project that predicts student exam scores based on academic behavior.
+
+The system analyzes:
+
+* 📚 Study Hours (per day)
+* 🏫 Attendance Percentage
+
+and intelligently predicts final exam performance.
+
+It also classifies students into performance levels:
+
+| Score Range | Category     |
+| ----------- | ------------ |
+| 0 – 40      | 🔴 Weak      |
+| 41 – 60     | 🟠 Average   |
+| 61 – 75     | 🔵 Good      |
+| 76 – 100    | 🟢 Excellent |
+
+A modern **Streamlit Web Application** allows real-time prediction and visualization.
 
 ---
 
 ## 🧠 Machine Learning Model
 
-- **Algorithm**: Linear Regression  
-- **Library**: Scikit-learn  
-- **Training Method**: Supervised Learning  
-- **Output**: Continuous Score Prediction (0–100)
+**Algorithm:** Linear Regression
+**Learning Type:** Supervised Learning
+**Library:** Scikit-learn
 
-### 📊 Mathematical Model:
-Score = w1 × Hours + w2 × Attendance + b
+### Mathematical Model
 
-text
+Score = w₁ × Study Hours + w₂ × Attendance + b
+
+The model learns relationships between study behavior and academic performance.
 
 ---
 
-## 📂 Dataset
+## 📊 Dataset Information
 
-| Feature     | Description                   |
-|-------------|-------------------------------|
-| Hours       | Study hours per day (1-10)    |
-| Attendance  | Class attendance % (50-100)   |
-| Score       | Final exam score (0-100)      |
+| Feature    | Description                     |
+| ---------- | ------------------------------- |
+| Hours      | Study hours per day (1–10)      |
+| Attendance | Attendance percentage (50–100%) |
+| Score      | Final exam score (0–100)        |
 
 ---
 
 ## ⚙️ Tech Stack
 
-- 🐍 Python 3.10
-- 📊 Pandas, NumPy
-- 🤖 Scikit-learn
-- 📈 Matplotlib, Seaborn
-- 🌐 Streamlit
-- 💾 Pickle (model serialization)
+* 🐍 Python 3.10
+* 🤖 Scikit-learn
+* 📊 Pandas & NumPy
+* 📈 Matplotlib & Seaborn
+* 🌐 Streamlit
+* 💾 Pickle (Model Serialization)
 
 ---
 
 ## 📁 Project Structure
+
+```
 Student-Score-Predictor/
 │
-├── dataset.csv # Raw data
-├── train.py # Model training script
-├── predict.py # CLI prediction script
-├── app.py # Streamlit web app
-├── model.pkl # Trained model file
-├── requirements.txt # Dependencies
-└── README.md # Project documentation
-
-text
-
----
-## How to Show this Project
-```bash
-Streamlit Deploy link:https://student-score-predictor-hrykgxexqb5k96txlzmrwb.streamlit.app/
+├── dataset.csv
+├── train.py
+├── predict.py
+├── app.py
+├── model.pkl
+├── requirements.txt
+└── README.md
+```
 
 ---
 
-## 🚀 How to Run the Project
+## 🚀 How to Run Locally
 
 ### 1️⃣ Clone Repository
-```bash
+
+```
 git clone https://github.com/maahfuzdev/Student-Score-Predictor.git
 cd Student-Score-Predictor
-2️⃣ Install Dependencies
-bash
+```
+
+### 2️⃣ Install Dependencies
+
+```
 pip install -r requirements.txt
-3️⃣ Train Model
-bash
+```
+
+### 3️⃣ Train Model
+
+```
 python train.py
-4️⃣ Run CLI Prediction
-bash
+```
+
+### 4️⃣ CLI Prediction
+
+```
 python predict.py
-5️⃣ Run Web App (Streamlit)
-bash
+```
+
+### 5️⃣ Run Streamlit Web App
+
+```
 streamlit run app.py
-🌐 Web App Features
-✔ Interactive UI with sliders and buttons
+```
 
-✔ Real-time prediction as you adjust values
+---
 
-✔ Score category classification with colored badges
+## 🌐 Web Application Features
 
-✔ Graph visualization (actual vs predicted trends)
+✅ Interactive sliders
+✅ Real-time prediction
+✅ Performance category classification
+✅ Data visualization graphs
+✅ Clean modern UI
+✅ Beginner-friendly AI system
 
-✔ User-friendly design with custom CSS
+---
 
-📊 Visualization Examples
-Study Hours vs Score	Attendance vs Performance
-📉 Scatter plot with regression line	📊 Bar chart of categories
-📈 Results & Accuracy
-Model: Linear Regression
+## 📈 Model Performance
 
-R² Score: ~0.89 (example value)
+| Metric              | Value             |
+| ------------------- | ----------------- |
+| Model               | Linear Regression |
+| R² Score            | ~0.89             |
+| Mean Absolute Error | ~4.2              |
 
-Mean Absolute Error: ~4.2 points
+The model effectively identifies student performance trends and risk levels.
 
-The model successfully predicts student performance and helps identify at-risk students.
+---
 
-🧪 Example Prediction
-text
-Input:
+## 🧪 Example Prediction
+
+**Input**
+
+```
 Study Hours: 6
 Attendance: 80%
+```
 
-Output:
+**Output**
+
+```
 Predicted Score: 78.45
-Category: 🟢 Excellent
-🎯 Applications
-🎓 Educational analytics for schools/colleges
+Category: Excellent 🟢
+```
 
-🏫 Student performance tracking dashboards
+---
 
-📊 Academic improvement planning
+## 🎯 Real-World Applications
 
-🤖 AI-based education systems and tutors
+* 🎓 Educational Analytics Systems
+* 🏫 Student Monitoring Dashboards
+* 📊 Academic Improvement Planning
+* 🤖 AI-based Learning Platforms
+* 📚 Smart Education Research Projects
 
-🔮 Future Improvements
-➕ Add more features (sleep time, assignments, previous grades, extracurriculars)
+---
 
-🤖 Use advanced ML models (Random Forest, XGBoost, Neural Networks)
+## 🔮 Future Improvements
 
-📱 Deploy mobile app version (Flutter + API)
+* ➕ Add more student features (sleep, assignments, GPA)
+* 🤖 Advanced ML models (Random Forest, XGBoost)
+* 📱 Mobile App (Flutter + API)
+* ☁️ Cloud Deployment Expansion
+* 📊 Real-time Database Integration
 
-☁️ Cloud deployment (Render / HuggingFace Spaces / AWS)
+---
 
-📊 Real-time database integration (Firebase/SQLite)
+## 👨‍💻 Developer
 
-👨‍💻 Developer
-Md Maahfuzur Rahman
+**Md Maahfuzur Rahman**
 
-💡 Built using Python & Machine Learning
+💡 Machine Learning & AI Enthusiast
+🎯 Focus: Educational Data Mining & Smart Systems
 
-🎯 Focus: Educational Data Mining & AI
+📧 Email: [maahfuz2021@gmail.com](mailto:maahfuz2021@gmail.com)
+🔗 GitHub: https://github.com/maahfuzdev
 
-🚀 Goal: Smart, accessible AI-based academic systems
+---
 
-📧 Contact: [maahfuz2021@gmail.com]
+## ⭐ Project Highlights
 
-🔗 GitHub: github.com/maahfuzdev
+✔ End-to-End Machine Learning Pipeline
+✔ Model Training → Prediction → Deployment
+✔ Streamlit AI Web Application
+✔ Portfolio & Research Ready Project
+✔ Clean Professional Structure
 
-⭐ Project Highlights
-✔ End-to-end ML pipeline (data → training → deployment)
+---
 
-✔ Real-world dataset with synthetic but realistic patterns
+## 📜 License
 
-✔ Web-based AI system using Streamlit
+This project is created for **educational and learning purposes**.
+You are free to use, modify, and share with attribution.
 
-✔ Research paper ready structure
+---
 
-✔ Beginner-friendly but professional quality
+## 🙏 Acknowledgments
 
-📌 License
-This project is for educational purposes. Feel free to use, modify, and share with attribution.
+* Scikit-learn Documentation
+* Streamlit Community
+* Open-Source Contributors
+* Python ML Ecosystem ❤️
 
-🙏 Acknowledgments
-Scikit-learn documentation
+---
 
-Streamlit community
-
-Real Python tutorials
-
-Open-source contributors
-
+<p align="center">
+⭐ If you like this project, don't forget to star the repository!
+</p>
