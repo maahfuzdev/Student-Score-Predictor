@@ -75,6 +75,10 @@ Student-Score-Predictor/
 text
 
 ---
+## How to Show this Project
+Streamlit Deploy link:https://student-score-predictor-hrykgxexqb5k96txlzmrwb.streamlit.app/
+
+---
 
 ## 🚀 How to Run the Project
 
